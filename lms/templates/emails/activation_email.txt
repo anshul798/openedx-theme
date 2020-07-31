@@ -1,0 +1,20 @@
+<%! from django.utils.translation import ugettext as _ %>
+${"Thanks for signing up for  {platform_name}.".format(platform_name=settings.PLATFORM_NAME)}
+
+${"{platform_name} (RCMOOCS University Digital Education) is the virtual educational environment  where different types of courses are taught.".format(platform_name=settings.PLATFORM_NAME)}
+
+${"To continue with the registration process you must enter the following link:"}
+
+% if is_secure:
+  https://${ site }/activate/${ key }
+% else:
+  http://${ site }/activate/${ key }
+% endif
+
+${"Once this is done, you will be able to access the different courses that are available."}
+
+${"If you have any questions, you can contact {tech_support_email}".format(tech_support_email=settings.TECH_SUPPORT_EMAIL)}
+
+${"Say Hello,"}
+
+${"Team RCMOOCS"}

@@ -1,0 +1,46 @@
+## mako
+<%namespace name='static' file='static_content.html'/>
+<%!
+  from django.core.urlresolvers import reverse
+%>
+
+<footer class="footer">
+  <div class="wrapper-footer">
+    <div class="footer-content">
+      <div class="footer-column">
+        <div class="footer-title">RAMANUJAN</div>
+        <ul>
+          <li><a href="https://ramanujancollege.ac.in/" target="_blank" class="link footer">Ramanujan Home</a></li>
+          <li><a href="http://rxdp.in" target="_blank" class="link footer">Certification Verification</a></li>
+        <!--  <li><a href="https://edu.utec.edu.uy/#form-row" class="link footer">Contacto</a></li> -->
+        </ul>
+      </div>
+      <div class="footer-column">
+        <div class="footer-title">DEVELOPMENT PROGRAMS</div>
+        <ul>
+          <li><a href="https://drive.google.com/file/d/1E4S4AhKuyFAfueIR2upa2Zt5sUCgbSUP/view" target="_blank" class="link footer">Workshop</a></li>
+         <!-- <li><a href="https://utec.edu.uy/formacion/#programas-especiales" target="_blank" class="link footer">Programas Especiales</a></li> -->
+         <!-- <li><a href="https://edu.utec.edu.uy/" class="link footer">EDU</a></li>  -->
+        </ul>
+      </div>
+      <div class="footer-column">
+        <div class="footer-title">Frequently Asked Questions</div>
+        <ul>
+          <li><a href="https://drive.google.com/file/d/1miqgq5B-ij6iwRwNmlMlh6IbsaAXn079/view?usp=sharing" target="_blank" class="link footer">FAQ</a></li>
+       <!--   <li><a href="https://ramanujancollege.ac.in/about-us/history/" target="_blank" class="link footer">History</a></li> -->
+       <!--   <li><a href="https://utec.edu.uy/estudiantes/" target="_blank" class="link footer">Novedades</a></li>  
+          <li><a href="https://utec.edu.uy/estudiantes/#descargas-row" target="_blank" class="link footer">Descargas</a></li>  -->
+        </ul>
+      </div>
+      <div class="footer-column">
+        <img src="${static.url('images/footerlogo.png')}" width="160">
+        <div class="footer-info">Vipin Rathi</div>
+        <div class="footer-info">apc@ramanujan.du.ac.in,</div>
+        <img src="${static.url('images/openedx-logo-tag.png')}" width="160"> 
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2020 - RD&amp;S Cell Ramanujan College. All Rights Reserved except where noted. Open edX is registered trademarks of edX Inc.</p>
+    </div>
+  </div>
+</footer>
